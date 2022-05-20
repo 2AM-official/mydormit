@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { Link, useNavigate } from "react-router-dom"
 
 
-const Login = ({onAdd}) => {
+const Signup = ({onAdd}) => {
 
     const [fname, setFName] = useState('')
     const [lname, setLName] = useState('')
@@ -38,7 +38,7 @@ const Login = ({onAdd}) => {
     }
 
     return (
-  
+        
     <form className='add-form' onSubmit={onSubmit}>
         <h1>Welcome!</h1>
         <div className='name'>
@@ -87,9 +87,9 @@ const Login = ({onAdd}) => {
             <input type='submit' value='Creat Account'
             className='btn btn-block'></input>
         </div>
-        <h5><Link to = "/signup">Do not have a Dormit Account?</Link></h5>
+        <h5><Link to = "/login">Already have a Dormit Account?</Link></h5>
     </form>
     )
 }
 
-export default Login
+export default Signup
